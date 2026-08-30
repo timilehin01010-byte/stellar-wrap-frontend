@@ -8,9 +8,9 @@
     "pnpm": ">=10.0.0"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test:unit": "jest",
@@ -28,7 +28,7 @@
     "vitest": "vitest",
     "test:ui": "vitest --ui",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "node init && storybook build",
     "lhci": "lhci autorun",
     "lhci:local": "lhci autorun",
     "prepare": "husky install",
